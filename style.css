@@ -1,0 +1,147 @@
+body {
+    /*text-align: center;*/
+    background-size: cover;
+    color: white;
+    /* font-family: 'Amatic SC', cursive; */
+    /* background-color: rgb(95,207,128); */
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #quote-box {
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    line-height: .5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .quote {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.1;
+    text-shadow: 0 1px 1px rgba(0,0,0, .8);
+    position: relative;
+    margin: 0;
+    } 
+  .quote:before, .quote:after {
+    font-size: 6rem;
+    line-height: 2.5rem;
+    position: absolute;
+  }
+  .quote:before {
+    content: "“";
+    top: .25em;
+    left: -.5em;
+  }
+  .quote:after {
+    content: "”";
+    bottom: -.1em;
+    margin-left: .1em;
+    position: absolute;
+  }
+  .source {
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    text-align: right;
+    margin-right: 4em;
+    color: orangered;
+    text-shadow: 0 1px 1px rgba(0,0,0, .8);
+    stroke: 2px black;
+  }
+  .source:before {
+    content: "—";
+  }
+  .citation {
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+  .citation:before {
+    content: ", ";
+    font-style: normal;
+  }
+  .year:before {
+    content: ", ";
+    font-style: normal;
+  }
+  
+  #loadQuote {
+    font-size: 1.2rem;;
+    /* position: fixed; */
+    width: 8cm;
+    display: inline-block;
+    left: 50%;
+    margin-left: 13.5cm;
+    bottom: 150px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: rgba(255,255,255, 0);
+    padding: 15px 0;
+    transition: .5s ;
+    margin-top: 13cm;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    background: linear-gradient(to top, #cc0000 0%, #ff3399 100%);
+    box-shadow: 0 5px 1px rgba(25,25,25,25);
+  }
+  #loadQuote:hover {
+    background: linear-gradient(to top, #ff3399 0%, #cc0000 100%);
+    color: rgb(255, 255, 255);
+  }
+  #loadQuote:focus {
+    outline: none;
+  }
+  
+  #home {
+    /* font-size: 1.5rem;; */
+    /* position: fixed; */
+    width: 3cm;
+    display: inline-block;
+    left: 50%;
+    margin-left: 16cm;
+    /* justify-content: center; */
+    bottom: 15px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: rgba(255,255,255, 0);
+    padding: 15px 0;
+    transition: .5s ;
+    margin-top: 0.2cm;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    background: linear-gradient(to top, #cc0000 0%, #ff3399 100%);
+    box-shadow: 0 5px 1px rgba(25,25,25,25);
+  }
+  #home:hover {
+    /* background-color: white; */
+    color: black;
+    background: linear-gradient(to top, #ff3399 0%, #cc0000 100%);
+  }
+  #home:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 420px) {
+    .quote {
+      font-size: 2.5rem;
+    }
+    .quote:before, .quote:after {
+      font-size: 3rem;
+    }
+    .source {
+      font-size: 1rem;
+    }
+  }
+  
